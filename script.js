@@ -1,0 +1,11 @@
+const menuButton=document.querySelector('.menu-toggle'),nav=document.querySelector('.main-nav');
+menuButton?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
+nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const reviewDialog=document.getElementById('reviewDialog');
+document.querySelectorAll('[data-review]').forEach(b=>b.addEventListener('click',()=>{let r=reviews[Number(b.dataset.review)];document.getElementById('reviewName').textContent=r[0];document.getElementById('reviewText').textContent=r[1];reviewDialog.showModal();document.querySelector('.reviews').classList.add('paused');}));
+const pause=document.getElementById('pauseReviews');pause.addEventListener('click',()=>{const v=document.querySelector('.reviews').classList.toggle('paused');pause.setAttribute('aria-pressed',String(v));pause.textContent=v?'Reanudar movimiento ▶':'Pausar movimiento Ⅱ';});
+reviewDialog.addEventListener('close',()=>{document.querySelector('.reviews').classList.toggle('paused',pause.getAttribute('aria-pressed')==='true');});
+document.querySelectorAll('.close-dialog').forEach(b=>b.addEventListener('click',()=>b.closest('dialog').close()));
+document.getElementById('cookieSettings').addEventListener('click',()=>document.getElementById('cookieDialog').showModal());
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget);const t=window.ABELIFT_I18N.t;const labels={name:'Nombre',company:'Empresa / comunidad',email:'Correo electrónico',phone:'Teléfono',service:'Servicios',message:'Mensaje'};const content=t('Consulta para ABELIFT')+'\n\n'+[...data.entries()].map(([k,v])=>t(labels[k]||k)+': '+v).join('\n');const url=URL.createObjectURL(new Blob([content],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='consulta-abelift.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);document.getElementById('contactFeedback').textContent='Consulta descargada. No se ha enviado a ABELIFT: el envío estará disponible cuando se conecte el correo receptor.';});

@@ -1,0 +1,12 @@
+IDIOMAS — REVISIÓN 5
+
+ES: español. CA: catalán. EN: inglés. PT: portugués.
+La selección se conserva en sessionStorage y se comparte entre la portada, las páginas informativas y el configurador.
+
+Traducidos: navegación, títulos y párrafos, formularios y ayudas, textos alternativos, diálogos y botones, interfaz del configurador, opciones genéricas de materiales, avisos de uso, mensajes de simulación y resumen descargable.
+
+Las cinco reseñas conservan el texto original del cliente. Los nombres propios, direcciones, referencias RAL/AISI, códigos de modelo y nombres comerciales de acabados se conservan. Esto es deliberado para poder identificar las muestras del catálogo.
+
+El diccionario se mantiene en translations.json y su copia incorporada en idiomas.js. Si se editan traducciones manualmente, hay que actualizar ambas copias. motion.js contiene las ocho cualidades animadas en los cuatro idiomas.
+
+Los textos de nuevos trabajos que se añadan a trabajos.js son contenido propio y deberán proporcionarse en los idiomas deseados. Los controles de la galería sí están traducidos.

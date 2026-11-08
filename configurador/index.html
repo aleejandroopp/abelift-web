@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>ABELIFT · Configurador de cabinas</title><link href="data:," rel="icon"/><link href="styles.css" rel="stylesheet"/>
+<script defer="" src="../idiomas.js"></script></head>
+<body>
+<header><a class="brand" href="../index.html#configurador"><img alt="ABELIFT Ascensors" src="../assets/logo-abelift.png"/></a><a class="header-note" href="../index.html#configurador">← Volver a ABELIFT</a></header>
+<main>
+<section class="intro"><div><small>NOVEDAD · CONFIGURADOR 3D</small><h1>Diseña tu ascensor</h1><p>Personaliza cada detalle de tu cabina y descubre el resultado en tiempo real.</p></div><div class="intro-cta">ACABADOS · VISTA 3D · SIMULACIÓN</div></section>
+<section class="workspace">
+<div class="viewer">
+<div class="viewerhead"><div><small>VISTA PREVIA</small><h2>Tu ascensor</h2></div><button class="ghost" id="resetView">↺ Restablecer vista</button></div>
+<nav aria-label="Vistas de detalle" class="view-buttons"><button aria-pressed="true" data-view="cabin" type="button">Cabina</button><button aria-pressed="false" data-view="panel" type="button">Botonera</button><button aria-pressed="false" data-view="landing" type="button">Rellano</button><button aria-pressed="false" data-view="ceiling" type="button">Techo</button><button aria-pressed="false" data-view="floor" type="button">Suelo</button><button aria-pressed="false" data-view="doors" type="button">Puertas</button><button aria-pressed="false" data-view="exterior" type="button">Estructura</button></nav><div id="stage"><div id="loading">Preparando configurador 3D…</div><div class="view-hint">Arrastra para girar · Rueda para acercar</div><div class="view-tag">VISTA 3D</div></div>
+<div class="action-launch"><button id="simStart" type="button">▶ Ver mi ascensor en acción</button><span>Entrada · subida · salida · bajada</span></div>
+<section aria-label="Simulación del recorrido" hidden="" id="simulationPanel"><div class="sim-heading"><span id="simFloor">PB</span><p id="simStatus" role="status">Preparando recorrido</p></div><progress aria-label="Progreso del recorrido" id="simProgress" max="100" value="0"></progress><div class="sim-buttons"><button id="simPause">Pausar</button><button id="simRestart">Reiniciar</button><button id="simOverview">Ver edificio</button><button id="simFollow">Seguir cabina</button><button id="simExit">Volver al diseño</button></div><p class="sim-note">Animación ilustrativa de tres plantas. La cabina conserva tus colores y acabados. Medidas, mecanismos y velocidad son representativos.</p></section>
+<div class="viewerfoot"><div><small>SELECCIÓN ACTUAL</small><b id="summary">A01 · Chapa pintada</b></div><button class="ghost" id="reset">Restablecer diseño ↺</button></div>
+<div class="catalog-warning">Vista orientativa. Los colores y acabados se confirman con muestras físicas.</div>
+</div>
+<aside>
+<div class="panel-head"><small>PERSONALIZACIÓN</small><h2>Elige tus acabados</h2><p>Cambia los materiales y observa cómo transforma tu cabina.</p></div>
+<div id="controls"></div>
+<div class="bottom"><button class="primary" id="request">Solicitar presupuesto <span>→</span></button><p>Descarga un resumen para compartirlo con ABELIFT.</p></div>
+</aside>
+</section>
+</main>
+<footer class="site-footer"><a class="footer-brand" href="#"><img alt="ABELIFT Ascensors" src="../assets/logo-abelift.png"/></a><div class="footer-contact"><a href="tel:+34936804801">936 80 48 01</a> · <a href="mailto:info@abelift.cat">info@abelift.cat</a><p>Carrer de Miquel Àngel, 88 · 08028 Barcelona</p></div></footer>
+<div class="overlay" id="modal"><div class="dialog"><button class="close" id="close">×</button><small>ABELIFT · SOLICITUD DE CONFIGURACIÓN</small><h2>Tu diseño está preparado.</h2><p>Revisa el resumen y descarga la configuración para compartirla con ABELIFT.</p><div class="summary" id="details"></div><form id="form"><label>Nombre<input name="name" placeholder="Tu nombre" required=""/></label><label>Correo electrónico<input name="email" placeholder="nombre@ejemplo.com" required="" type="email"/></label><label>Teléfono<input name="phone" placeholder="+34"/></label><label>Tipo de proyecto<select name="project"><option>Modernización</option><option>Obra nueva</option><option>Edificio sin ascensor</option><option>Vivienda unifamiliar / homelift</option><option>Otro / por definir</option></select></label><label>Comentarios<textarea name="notes" placeholder="Medidas aproximadas, edificio, necesidades…"></textarea></label><button class="primary" type="submit">Descargar resumen de solicitud ↓</button></form><p class="fine">Prototipo local: los datos no se transmiten ni se guardan en un servidor.</p></div></div>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/"}}</script>
+<script src="app.js" type="module"></script>
+</body></html>

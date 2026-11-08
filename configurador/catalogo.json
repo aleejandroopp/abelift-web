@@ -1,0 +1,709 @@
+{
+  "models": {
+    "A01": {
+      "label": "A01 · Chapa pintada",
+      "wall": "paint_white",
+      "floor": "rubber_cement"
+    },
+    "A02": {
+      "label": "A02 · Acero inoxidable",
+      "wall": "inox_satin",
+      "floor": "rubber_black"
+    },
+    "A03": {
+      "label": "A03 · Laminado White Ash",
+      "wall": "lam_F8841",
+      "floor": "stone_expo"
+    },
+    "A04": {
+      "label": "A04 · Laminado Gris Popular",
+      "wall": "lam_F7927",
+      "floor": "stone_tebas"
+    },
+    "A05": {
+      "label": "A05 · Gris metal",
+      "wall": "paint_metal",
+      "floor": "stone_tebas"
+    }
+  },
+  "walls": [
+    [
+      "Chapa pintada · Blanco RAL 9016",
+      "paint_white"
+    ],
+    [
+      "Chapa pintada · Beige RAL 1019",
+      "paint_beige"
+    ],
+    [
+      "Chapa pintada · Marfil claro RAL 1015",
+      "paint_ivory"
+    ],
+    [
+      "Chapa pintada · Gris perlado RAL 9022",
+      "paint_pearl"
+    ],
+    [
+      "Chapa pintada · Gris metal RAL 9006",
+      "paint_metal"
+    ],
+    [
+      "Chapa pintada · Negro RAL 9005",
+      "paint_black"
+    ],
+    [
+      "Chapa pintada · Gris hormigón RAL 7023",
+      "paint_concrete"
+    ],
+    [
+      "Chapa pintada · Violeta pastel RAL 4009",
+      "paint_lilac"
+    ],
+    [
+      "Skinplate · Crema",
+      "skin_cream"
+    ],
+    [
+      "Skinplate · Blanco simil inox.",
+      "skin_white"
+    ],
+    [
+      "Skinplate · Gris",
+      "skin_grey"
+    ],
+    [
+      "Acero inoxidable · Satinado",
+      "inox_satin"
+    ],
+    [
+      "Acero inoxidable · Pulido",
+      "inox_polished"
+    ],
+    [
+      "Acero inoxidable · Checks",
+      "inox_checks"
+    ],
+    [
+      "Acero inoxidable · Canvas",
+      "inox_canvas"
+    ],
+    [
+      "Acero inoxidable · Cuero",
+      "inox_leather"
+    ],
+    [
+      "Acero inoxidable · Linen",
+      "inox_linen"
+    ],
+    [
+      "Laminado · F2274 Blanco Francia",
+      "lam_F2274"
+    ],
+    [
+      "Laminado · F2833 Arena pétrea",
+      "lam_F2833"
+    ],
+    [
+      "Laminado · F1139 Cerezo",
+      "lam_F1139"
+    ],
+    [
+      "Laminado · F7884 Azul China",
+      "lam_F7884"
+    ],
+    [
+      "Laminado · F1997 Océano",
+      "lam_F1997"
+    ],
+    [
+      "Laminado · F7837 Grafito",
+      "lam_F7837"
+    ],
+    [
+      "Laminado · F8832 Elemental Corten",
+      "lam_F8832"
+    ],
+    [
+      "Laminado · F8833 Elemental Graphite",
+      "lam_F8833"
+    ],
+    [
+      "Laminado · F7923 Surf",
+      "lam_F7923"
+    ],
+    [
+      "Laminado · F2273 Seringa",
+      "lam_F2273"
+    ],
+    [
+      "Laminado · F8841 White Ash",
+      "lam_F8841"
+    ],
+    [
+      "Laminado · F0190 Haya finlandesa",
+      "lam_F0190"
+    ],
+    [
+      "Laminado · F0193 Xenon",
+      "lam_F0193"
+    ],
+    [
+      "Laminado · F1062 Roble",
+      "lam_F1062"
+    ],
+    [
+      "Laminado · F7927 Gris Popular",
+      "lam_F7927"
+    ],
+    [
+      "Laminado · F8830 Elemental Concrete",
+      "lam_F8830"
+    ],
+    [
+      "Laminado · F5873 SET Ventura Oak",
+      "lam_F5873"
+    ],
+    [
+      "Laminado · F2478 Turquesa",
+      "lam_F2478"
+    ],
+    [
+      "Laminado · F8849 Natural Teak",
+      "lam_F8849"
+    ],
+    [
+      "Laminado · F8848 Blackened Legno",
+      "lam_F8848"
+    ],
+    [
+      "Vidrio lacado · Blanco puro RAL 9003",
+      "glass_white"
+    ],
+    [
+      "Vidrio lacado · Negro estelar RAL 0337",
+      "glass_black"
+    ],
+    [
+      "Vidrio lacado · Blanco perla RAL 1013",
+      "glass_pearl"
+    ],
+    [
+      "Vidrio lacado · Gris metal RAL 9006",
+      "glass_metal"
+    ],
+    [
+      "Vidrio lacado · Bronce",
+      "glass_bronze"
+    ],
+    [
+      "Vidrio lacado · Aluminio RAL 9007",
+      "glass_aluminium"
+    ],
+    [
+      "Vidrio lacado · Rojo terracota RAL 8815",
+      "glass_terracotta"
+    ],
+    [
+      "Vidrio lacado · Verde pistacho RAL 1164",
+      "glass_pistachio"
+    ],
+    [
+      "Skinplate · Simil inox.",
+      "skin_simil"
+    ],
+    [
+      "Vidrio lacado · Marrón claro RAL 1236 mate",
+      "glass_brown_matte"
+    ],
+    [
+      "Vidrio lacado · Marrón claro RAL 1236",
+      "glass_brown"
+    ],
+    [
+      "Vidrio lacado · Verde RAL 8615",
+      "glass_green"
+    ],
+    [
+      "Vidrio lacado · Blanco perla mate",
+      "glass_pearl_matte"
+    ],
+    [
+      "Laminado · F6307 Burnt Strand",
+      "lam_F6307"
+    ],
+    [
+      "Laminado · F3091 Blanco Polar Brillo",
+      "lam_F3091"
+    ],
+    [
+      "Vidrio bajo pedido · RAL 1586",
+      "glass_order_1586"
+    ],
+    [
+      "Vidrio bajo pedido · RAL 8017",
+      "glass_order_8017"
+    ],
+    [
+      "Vidrio bajo pedido · Plata",
+      "glass_order_silver"
+    ],
+    [
+      "Vidrio bajo pedido · RAL 5002",
+      "glass_order_5002"
+    ],
+    [
+      "Vidrio bajo pedido · RAL 2001",
+      "glass_order_2001"
+    ],
+    [
+      "Vidrio bajo pedido · RAL 9005",
+      "glass_order_9005"
+    ]
+  ],
+  "floors": [
+    [
+      "Goma antideslizante · Beige",
+      "rubber_beige"
+    ],
+    [
+      "Goma antideslizante · Roble",
+      "rubber_oak"
+    ],
+    [
+      "Goma antideslizante · Azul acero",
+      "rubber_blue"
+    ],
+    [
+      "Goma antideslizante · Negro",
+      "rubber_black"
+    ],
+    [
+      "Goma antideslizante · Arena",
+      "rubber_sand"
+    ],
+    [
+      "Goma antideslizante · Gris",
+      "rubber_grey"
+    ],
+    [
+      "Goma antideslizante · Gris cemento",
+      "rubber_cement"
+    ],
+    [
+      "Piedra artificial · Gris Expo",
+      "stone_expo"
+    ],
+    [
+      "Piedra artificial · Ethereal Glow",
+      "stone_glow"
+    ],
+    [
+      "Piedra artificial · Rougui",
+      "stone_rougui"
+    ],
+    [
+      "Piedra artificial · Blanco Norte",
+      "stone_white"
+    ],
+    [
+      "Piedra artificial · Negro Tebas",
+      "stone_tebas"
+    ],
+    [
+      "Suelo metálico · Aluminio damero",
+      "metal_checker"
+    ],
+    [
+      "Suelo metálico · Acero inoxidable",
+      "metal_inox"
+    ],
+    [
+      "Suelo metálico · Chapa lagrimada",
+      "metal_tread"
+    ],
+    [
+      "Granito natural · Gris Quintana",
+      "granite_quintana"
+    ],
+    [
+      "Granito natural · Gris Perla",
+      "granite_pearl"
+    ],
+    [
+      "Granito natural · Rosa Porriño",
+      "granite_porrino"
+    ],
+    [
+      "Granito natural · Blanco Cristal",
+      "granite_crystal"
+    ],
+    [
+      "Granito natural · Negro Sudáfrica",
+      "granite_black"
+    ],
+    [
+      "Granito natural · Blanco Trevi",
+      "granite_trevi"
+    ],
+    [
+      "Granito natural · Negro Intenso",
+      "granite_intense"
+    ],
+    [
+      "Granito natural · Azul Labrador oscuro",
+      "granite_labrador"
+    ],
+    [
+      "Granito natural · Warwick Rubi",
+      "granite_ruby"
+    ],
+    [
+      "Granito natural · Guyana",
+      "granite_guyana"
+    ]
+  ],
+  "ceilings": [
+    [
+      "Marco",
+      "frame"
+    ],
+    [
+      "Barras LED",
+      "bars"
+    ],
+    [
+      "LED spots",
+      "spots"
+    ],
+    [
+      "LED spots · Curvo",
+      "curved"
+    ],
+    [
+      "Panel LED",
+      "panel"
+    ],
+    [
+      "Cristal matizado",
+      "frosted"
+    ]
+  ],
+  "mirrors": [
+    [
+      "Sin espejo",
+      "none"
+    ],
+    [
+      "Espejo 1/2",
+      "half"
+    ],
+    [
+      "Espejo lama",
+      "slats"
+    ],
+    [
+      "Espejo entero",
+      "full"
+    ]
+  ],
+  "lights": [
+    [
+      "Iluminación indirecta",
+      "indirect"
+    ],
+    [
+      "Iluminación en zócalo",
+      "skirting"
+    ],
+    [
+      "Iluminación en paños",
+      "walls"
+    ],
+    [
+      "Iluminación en botonera",
+      "buttons"
+    ],
+    [
+      "Iluminación en techo",
+      "ceiling"
+    ],
+    [
+      "Sin iluminación decorativa",
+      "none"
+    ]
+  ],
+  "rails": [
+    [
+      "Rectangular inox.",
+      "rect_inox"
+    ],
+    [
+      "Rectangular skinplate",
+      "rect_skin"
+    ],
+    [
+      "Tubular recto inox pulido",
+      "round_polished"
+    ],
+    [
+      "Tubular curvo inox satinado",
+      "curve_satin"
+    ],
+    [
+      "Tubular curvo inox pulido",
+      "curve_polished"
+    ],
+    [
+      "Tubular curvo pintado en negro",
+      "curve_black"
+    ]
+  ],
+  "doorsAuto": [
+    [
+      "Bus cristal + aluminio",
+      "bus"
+    ],
+    [
+      "Cristal total",
+      "glass"
+    ],
+    [
+      "Inox",
+      "inox"
+    ],
+    [
+      "Imprimación",
+      "primer"
+    ],
+    [
+      "Acero inox. gran mirilla",
+      "large_window"
+    ]
+  ],
+  "doorsSemi": [
+    [
+      "Semiautomática · Mirilla",
+      "semi_window"
+    ],
+    [
+      "Semiautomática · Gran mirilla",
+      "semi_large"
+    ]
+  ],
+  "doorFinishes": [
+    [
+      "Epoxi gofrado",
+      "epoxy"
+    ],
+    [
+      "Acero inoxidable liso",
+      "smooth"
+    ],
+    [
+      "AISI 441 2B/BA",
+      "aisi441"
+    ],
+    [
+      "AISI 304 2B",
+      "aisi304"
+    ],
+    [
+      "AISI 316 2B",
+      "aisi316"
+    ],
+    [
+      "RAL 7040",
+      "ral7040"
+    ]
+  ],
+  "panels": [
+    [
+      "De superficie · aluminio anodizado 920 × 220 mm",
+      "surface"
+    ],
+    [
+      "Columna estándar · 1960 mm",
+      "column"
+    ],
+    [
+      "Columna con iluminación",
+      "column_light"
+    ]
+  ],
+  "landing": [
+    [
+      "Placa transparente",
+      "clear_plate"
+    ],
+    [
+      "Superficie inox.",
+      "inox_surface"
+    ],
+    [
+      "Grabado sobre acero",
+      "engraved"
+    ],
+    [
+      "Con display sobre acero",
+      "steel_display"
+    ],
+    [
+      "Superficie aluminio",
+      "aluminium"
+    ]
+  ],
+  "displays": [
+    [
+      "Sin display",
+      "none"
+    ],
+    [
+      "TFT 2,8 pulgadas",
+      "2.8"
+    ],
+    [
+      "TFT 5,6 pulgadas",
+      "5.6"
+    ],
+    [
+      "7 pulgadas",
+      "7"
+    ],
+    [
+      "10 pulgadas",
+      "10"
+    ]
+  ],
+  "structures": [
+    [
+      "Sin estructura",
+      "none"
+    ],
+    [
+      "Chapa ciega",
+      "solid"
+    ],
+    [
+      "Chapa perforada",
+      "perforated"
+    ],
+    [
+      "Chapa cristal",
+      "glass"
+    ],
+    [
+      "Chapa cristal mate",
+      "frosted"
+    ]
+  ],
+  "structureColors": [
+    [
+      "Blanco RAL 9016",
+      "#f0eee8"
+    ],
+    [
+      "RAL 1015",
+      "#d8c7a0"
+    ],
+    [
+      "RAL 6013",
+      "#69755d"
+    ],
+    [
+      "RAL 1028",
+      "#e9a21a"
+    ],
+    [
+      "RAL 7032",
+      "#a8a69a"
+    ],
+    [
+      "RAL 3013",
+      "#8c3c32"
+    ],
+    [
+      "RAL 8011",
+      "#553b2c"
+    ],
+    [
+      "RAL 4004",
+      "#4d2341"
+    ],
+    [
+      "RAL 9001",
+      "#eee7d5"
+    ],
+    [
+      "RAL 5022",
+      "#292f5c"
+    ],
+    [
+      "RAL 9002",
+      "#d9d8d0"
+    ],
+    [
+      "RAL 5002",
+      "#173c78"
+    ],
+    [
+      "RAL 7016",
+      "#303a40"
+    ],
+    [
+      "RAL 9005",
+      "#171717"
+    ],
+    [
+      "RAL 2004",
+      "#e85b20"
+    ],
+    [
+      "RAL 6005",
+      "#174b36"
+    ],
+    [
+      "RAL 7042",
+      "#8d9290"
+    ]
+  ],
+  "buttons": [
+    [
+      "RT42",
+      "rt42"
+    ],
+    [
+      "US90 Jumbo",
+      "us90"
+    ],
+    [
+      "BAS 120",
+      "bas120"
+    ],
+    [
+      "BAS 120 Black",
+      "basblack"
+    ],
+    [
+      "US91-EN",
+      "us91"
+    ],
+    [
+      "US95 Jumbo",
+      "us95"
+    ],
+    [
+      "US95-EN",
+      "us95en"
+    ]
+  ],
+  "trimFinishes": [
+    [
+      "Acero inoxidable",
+      "steel"
+    ],
+    [
+      "Dorado",
+      "gold"
+    ]
+  ]
+}

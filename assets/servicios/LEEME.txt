@@ -1,0 +1,13 @@
+FOTOS DE FONDO DE LAS TARJETAS DE SERVICIOS
+Pon aquí tus imágenes con estos nombres EXACTOS (formato .jpg):
+
+  mantenimiento.jpg   -> Mantenimiento
+  modernizacion.jpg   -> Modernización
+  reparacion.jpg      -> Reparación
+  obra-nueva.jpg      -> Obra nueva
+  montacargas.jpg     -> Montacargas
+  inspecciones.jpg    -> Actas e inspecciones
+
+Recomendado: apaisadas, 1200 x 800 px, menos de 250 KB cada una (comprímelas en squoosh.app).
+La web las oscurece automáticamente para que el texto se lea bien; si falta alguna, la tarjeta
+se ve con un fondo azul oscuro. Usa imágenes de las que tengas derechos de uso.

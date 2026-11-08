@@ -1,0 +1,36 @@
+FOTOS DE ABELIFT — GUÍA DE SUSTITUCIÓN
+
+Abre la carpeta ABELIFT-WEB en VS Code. Dentro de assets/fotos, sustituye cada imagen conservando exactamente el nombre y la extensión. No hace falta modificar el código para estos espacios.
+
+PORTADA Y CIERRE
+barcelona.jpg — Fondo del hero y sección final de Barcelona. Horizontal, 2000 × 1300 px recomendado.
+
+PRESENTACIÓN
+cabina.jpg — Foto de materiales y acabados debajo del hero. Vertical o cuadrada, al menos 1200 px de ancho.
+
+SEIS ESPECIALIDADES
+mantenimiento.jpg — Mantenimiento.
+modernizacion.jpg — Modernización.
+reparacion.jpg — Reparación.
+obra-nueva.jpg — Obra nueva.
+montacargas.jpg — Montacargas.
+inspecciones.jpg — Actas e inspecciones, dentro de las seis especialidades.
+Formato recomendado para estos seis archivos: vertical 1200 × 1500 px. La foto llena la tarjeta y se recorta automáticamente. Evita poner textos o elementos importantes junto a los bordes. El título y la descripción se superponen en la mitad inferior con un fondo oscuro.
+Los seis archivos contienen ahora la misma imagen de catálogo provisional. Sustitúyelos por fotografías apropiadas de cada servicio. El aviso bajo la cuadrícula indica que son imágenes de referencia: cuando uses fotos reales, podrás actualizar ese aviso en index.html.
+
+RESTAURACIÓN
+restauracion.jpg — Cabina de madera / restauración. Vertical, 1200 × 1500 px recomendado. Actualmente es una imagen de catálogo; no se presenta como una obra terminada.
+
+CASA ENRIC LLORENS
+casa-enric-llorens.png — Fotografía de la rehabilitación en curso, horizontal 1600 × 900 px recomendado. No se menciona la duración de los trabajos.
+
+CONFIGURADOR
+../simulacion.png (ruta completa: assets/simulacion.png) — Vista previa del configurador. Ya contiene una captura de la simulación, no necesita una fotografía nueva.
+
+LOGO
+assets/logo-abelift.png — PNG de la marca utilizado en cabecera, ascensor animado, pie y configurador. Conserva la transparencia. No hace falta repetir el archivo en cada sección.
+
+GALERÍA DE TRABAJOS
+Los proyectos se gestionan desde trabajos.js. Consulta COMO-ANADIR-TRABAJOS.txt para añadir cada trabajo, sus textos y varias fotos. La carpeta de la galería no se publica como una lista automática: cada proyecto necesita su ficha.
+
+Después de cambiar las fotos: guarda, abre la web con Live Server y recarga con Cmd + Shift + R. Si ya está publicada, sube también los archivos nuevos al alojamiento. Renombrar un PNG a .jpg no lo convierte: exporta en el formato correspondiente.

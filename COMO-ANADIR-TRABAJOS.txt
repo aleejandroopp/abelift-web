@@ -1,0 +1,31 @@
+ABELIFT · AÑADIR FOTOS DE TRABAJOS
+
+1. Guarda las imágenes dentro de assets/trabajos/trabajo-01/.
+   Ejemplo: 01.jpg, 02.jpg y 03.jpg. Respeta mayúsculas y extensión:
+   01.JPG y 01.jpg no son el mismo nombre al publicar.
+   Usa tus fotografías reales. JPG, PNG y WebP funcionan.
+
+2. Abre trabajos.js en VS Code. Verás tres fichas preparadas.
+   Cambia titulo, categoria, ubicacion y descripcion.
+   Escribe entre comillas; evita comillas dobles/simples sin escapar
+   dentro de textos que usan esa misma comilla.
+
+3. En fotos deja solo las imágenes que realmente hayas colocado.
+   Para añadir otra foto dentro de la lista:
+   { src: 'assets/trabajos/trabajo-01/03.jpg', alt: 'Detalle de la botonera' }
+   Separa cada objeto de la lista con una coma.
+   La primera imagen será la portada de la tarjeta.
+   Las imágenes completas se ven al abrir la galería.
+
+4. Cambia publicado: false por publicado: true en esa ficha.
+   Si lo dejas en false, no aparecerá. Así puedes preparar trabajos
+   sin mostrarlos a los visitantes.
+
+5. Guarda, abre index.html con Live Server y revisa la tarjeta.
+   Puedes duplicar una ficha para añadir más trabajos; conserva las
+   comas entre objetos. No hay límite de tres trabajos.
+   Los filtros se crean automáticamente a partir de categoria.
+
+Los cambios son locales hasta que subas la carpeta actualizada a tu hosting.
+No es un panel de administración ni una subida automática desde el navegador.
+Si prefieres, pásame las fotos cuando las tengas y preparo las fichas contigo.

@@ -1,0 +1,16 @@
+ANTES DE PUBLICAR ABELIFT
+
+- Elegir dominio y alojamiento.
+- Sustituir las fotos provisionales de las seis especialidades y añadir trabajos cuando estén disponibles. Revisar derechos de uso de las imágenes.
+- Conectar el formulario a un servicio de recepción para info@abelift.cat y probar la llegada de una solicitud. Actualmente solo descarga TXT.
+- Completar los textos legales con el tratamiento real de datos y el servicio de formularios elegido. Los textos incluidos siguen identificados como versión de revisión.
+- Probar el configurador y la simulación en un navegador con WebGL habilitado, incluido móvil. El navegador de pruebas de esta revisión no disponía de WebGL.
+- Si se añaden analítica, mapas incrustados u otros servicios con cookies, configurar el consentimiento antes de que carguen. Esta versión usa enlaces externos al mapa y no incluye esos servicios.
+
+Datos confirmados utilizados:
+ABELIFT Ascensores S.L. · NIF B65965048
+936 80 48 01 · info@abelift.cat
+Carrer de Miquel Àngel, 88 · 08028 Barcelona
+Barcelona y área metropolitana, Vallès Occidental y Vallès Oriental.
+Presupuesto en 72 horas.
+Casa Enric Llorens: rehabilitación en curso, sin mencionar su duración.

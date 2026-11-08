@@ -1,0 +1,16 @@
+IMÁGENES QUE PUEDES CAMBIAR
+Guarda aquí tus fotos con estos nombres EXACTOS (formato .jpg). Si un archivo no existe,
+la web usa una imagen de ejemplo y muestra la nota «ilustración orientativa»; al poner tu foto la nota desaparece.
+
+  presentacion.jpg  -> Apartado 01 «Ascensores en Barcelona». Vertical (4:5), por ejemplo 1000 x 1250 px.
+  restauracion.jpg  -> Apartado «Restauración de ascensores». Vertical y estrecha, por ejemplo 700 x 1200 px.
+                       Se ve dentro de un marco con forma de arco: pon lo importante en el centro.
+  vestibulo.jpg     -> Bloque «Reparamos y modernizamos vestíbulos». Apaisada (11:7), por ejemplo 1100 x 700 px.
+
+Las fotos de las tarjetas de servicios van en la carpeta assets/servicios (ver su LEEME.txt).
+
+Consejos: menos de 250 KB por imagen (comprime en squoosh.app) y usa fotos de las que tengas derechos.
+Si cambias la foto de restauración, los 4 puntos interactivos pueden quedar mal colocados:
+abre la web con  #ajustar-puntos  al final (por ejemplo http://127.0.0.1:5500/#ajustar-puntos),
+haz clic en la foto sobre cada elemento y apunta los números x e y; luego edítalos en la primera
+línea del archivo secciones.js (PUNTOS).
