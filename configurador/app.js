@@ -108,7 +108,7 @@ try{renderer=new THREE.WebGLRenderer({antialias:!isMobile,alpha:false,preserveDr
 catch(error){
  webglAvailable=false;
  renderer={domElement:document.createElement('canvas'),shadowMap:{},capabilities:{getMaxAnisotropy(){return 1}},setPixelRatio(){},setSize(){},render(){}};
- const notice=$('#loading');notice.textContent='Vista 3D no disponible en este navegador. Activa la aceleración gráfica o utiliza otro navegador compatible con WebGL. Puedes seguir eligiendo acabados y descargar tu configuración.';notice.classList.add('webgl-notice');notice.setAttribute('role','status');
+ const notice=$('#loading');notice.textContent='Vista 3D no disponible en este navegador. Activa la aceleración gráfica o utiliza otro navegador compatible con WebGL. Puedes seguir eligiendo acabados y enviar una solicitud de presupuesto.';notice.classList.add('webgl-notice');notice.setAttribute('role','status');
  $('#simStart').disabled=true;
  document.querySelector('.view-tag').textContent='Vista 3D no disponible';
 }
@@ -331,7 +331,43 @@ function configText(){return controls.map(([label,,key,options])=>{
 }).join('\n');}
 $('#request').onclick=()=>{$('#details').textContent=configText();$('#modal').classList.add('open')};
 $('#close').onclick=()=>$('#modal').classList.remove('open');$('#modal').addEventListener('click',e=>{if(e.target.id==='modal')$('#modal').classList.remove('open')});
-$('#form').onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);const content=[t('ABELIFT · CONFIGURACIÓN DE CABINA'),'',configText(),'',t('DATOS DE CONTACTO'),...Object.entries({name:'Nombre',email:'Correo electrónico',phone:'Teléfono',project:'Tipo de proyecto',notes:'Comentarios'}).map(([k,label])=>t(label)+': '+d.get(k)),'',t('NOTA: Prototipo local. Esta solicitud no se ha enviado a ABELIFT. Las opciones deben validarse técnicamente y comercialmente.')].join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type:'text/plain;charset=utf-8'}));a.download='ABELIFT-configuracion-cabina.txt';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+// Envía el resumen de la cabina y los datos del cliente a Formspree.
+const configForm = $('#form');
+const configFeedback = $('#configFeedback');
+const configButton = configForm.querySelector('button[type="submit"]');
+const configEndpoint = window.ABELIFT_FORMS?.configurador;
+const configReady = /^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/.test(configEndpoint || '');
+if (configReady) {
+  configFeedback.textContent = t('Completa tus datos y enviaremos tu solicitud a ABELIFT.');
+}
+configForm.onsubmit = async event => {
+  event.preventDefault();
+  if (!configReady) {
+    configFeedback.textContent = t('El formulario aún no está conectado. Contacta por correo a info@abelift.cat.');
+    return;
+  }
+  const values = new FormData(configForm);
+  values.set('tipo_solicitud', 'Diseño de cabina 3D');
+  values.set('configuracion_seleccionada', configText());
+  values.set('nota_tecnica', 'Configuración orientativa: requiere verificación técnica y comercial de ABELIFT.');
+  configButton.disabled = true;
+  configForm.setAttribute('aria-busy','true');
+  configFeedback.textContent = t('Enviando solicitud…');
+  try {
+    const response = await fetch(configEndpoint, {
+      method: 'POST', body: values, headers: {Accept:'application/json'}
+    });
+    if (!response.ok) throw new Error('Formspree status: '+response.status);
+    configForm.reset();
+    configFeedback.textContent = t('Solicitud enviada correctamente. ABELIFT se pondrá en contacto contigo.');
+  } catch (error) {
+    console.error('ABELIFT: error en el envío del diseño', error);
+    configFeedback.textContent = t('No se ha podido enviar la solicitud. Vuelve a intentarlo o escribe a info@abelift.cat.');
+  } finally {
+    configButton.disabled = false;
+    configForm.removeAttribute('aria-busy');
+  }
+};
 window.addEventListener('abelift:language',()=>{updateSummary();if($('#modal').classList.contains('open'))$('#details').textContent=configText();});
 window.addEventListener('resize',()=>{camera.aspect=stage.clientWidth/stage.clientHeight;camera.updateProjectionMatrix();renderer.setSize(stage.clientWidth,stage.clientHeight)});
 let lastFrame=0;
