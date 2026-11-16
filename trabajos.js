@@ -3,7 +3,7 @@
 window.ABELIFT_TRABAJOS = [
   {
     publicado: true,
-    titulo: 'Título del primer trabajo',
+    titulo: 'Ascensor Noguera',
     categoria: 'Modernización',
     ubicacion: '',
     descripcion: '',
