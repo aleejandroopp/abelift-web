@@ -20,7 +20,15 @@ window.ABELIFT_TRABAJOS = [
     categoria: 'Restauración',
     ubicacion: '',
     descripcion: '',
-    fotos: [{ src: 'assets/trabajos/trabajo-02/01.jpg', alt: 'Vista de la restauración' }]
+   fotos: [
+  { src: 'assets/trabajos/trabajo-02/212.jpeg', alt: 'Fotografía del segundo proyecto' },
+  { src: 'assets/trabajos/trabajo-02/Wha2tsApp Image 2026-11-06 at 20.51.00.jpeg', alt: 'Vista del ascensor' },
+  { src: 'assets/trabajos/trabajo-02/WhatsApp Image 2026-11-06 at 20.51.00.jpeg', alt: 'Detalle del proyecto' },
+  { src: 'assets/trabajos/trabajo-02/WhatsApp Imwage 2026-11-06 at 20.51.00.jpeg', alt: 'Trabajo realizado por ABELIFT' },
+  { src: 'assets/trabajos/trabajo-02/WhatsApp Iwwwwmage 2026-11-06 at 20.51.00.jpeg', alt: 'Vista adicional del proyecto' },
+  { src: 'assets/trabajos/trabajo-02/w.jpeg', alt: 'Detalle adicional del ascensor' }
+]
+
   },
   {
     publicado: false,
