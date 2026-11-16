@@ -2,7 +2,7 @@
 // Cada foto tiene una ruta relativa a esta carpeta y una descripción.
 window.ABELIFT_TRABAJOS = [
   {
-    publicado: false,
+    publicado: true,
     titulo: 'Título del primer trabajo',
     categoria: 'Modernización',
     ubicacion: '',
@@ -13,7 +13,7 @@ window.ABELIFT_TRABAJOS = [
     ]
   },
   {
-    publicado: false,
+    publicado: true,
     titulo: 'Título del segundo trabajo',
     categoria: 'Restauración',
     ubicacion: '',
