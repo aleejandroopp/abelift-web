@@ -120,5 +120,53 @@
 <script defer="" src="trabajos.js"></script><script defer="" src="galeria.js"></script>
 <script defer="" src="reviews-data.js"></script><script defer="" src="form-config.js"></script><script defer="" src="script.js"></script>
 <dialog id="reviewDialog"><button autofocus="" class="close-dialog">Cerrar ×</button><p class="stars">★★★★★</p><h3 id="reviewName"></h3><p id="reviewText"></p></dialog><dialog id="cookieDialog"><button autofocus="" class="close-dialog">Cerrar ×</button><h3>Tu privacidad</h3><p>Esta versión no utiliza cookies de publicidad ni analítica. Las imágenes se sirven desde la propia web. El mapa solo se abre si decides visitar Google Maps.</p><a href="cookies.html">Ver política de cookies</a></dialog><a class="call-fab" href="tel:+34936804801" aria-label="Llamar a ABELIFT"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.300.2 2.500.6 3.600.1.300 0 .700-.2 1z"/></svg></a>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  const feedback = document.getElementById('contactFeedback');
+
+  if (!form || !feedback) return;
+
+  const endpoint = 'https://formspree.io/f/xvkapbbk';
+
+  feedback.textContent = 'Completa tus datos y envía tu solicitud a ABELIFT.';
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    event.stopImmediatePropagation();
+
+    const button = form.querySelector('button[type="submit"]');
+    if (button) button.disabled = true;
+
+    feedback.textContent = 'Enviando solicitud...';
+
+    try {
+      const data = new FormData(form);
+      data.set('tipo_solicitud', 'Presupuesto general');
+
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' }
+      });
+
+      if (!response.ok) {
+        throw new Error('Error HTTP ' + response.status);
+      }
+
+      form.reset();
+      feedback.textContent =
+        'Solicitud enviada correctamente. ABELIFT se pondrá en contacto contigo.';
+    } catch (error) {
+      console.error('Error al enviar presupuesto:', error);
+      feedback.textContent =
+        'No se pudo enviar. Inténtalo de nuevo o contacta con ABELIFT por correo.';
+    } finally {
+      if (button) button.disabled = false;
+    }
+  }, true);
+});
+</script>
 </body>
 </html>
