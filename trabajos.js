@@ -3,7 +3,7 @@
 window.ABELIFT_TRABAJOS = [
   {
     publicado: true,
-    titulo: 'Ascensor Noguera',
+    titulo: 'Ascensor Noguera, queda funcionando.',
     categoria: 'Modernización',
     ubicacion: '',
     descripcion: '',
@@ -14,7 +14,7 @@ window.ABELIFT_TRABAJOS = [
   },
   {
     publicado: true,
-    titulo: 'Título del segundo trabajo',
+    titulo: 'Ascensor',
     categoria: 'Restauración',
     ubicacion: '',
     descripcion: '',
