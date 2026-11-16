@@ -7,10 +7,12 @@ window.ABELIFT_TRABAJOS = [
     categoria: 'Modernización',
     ubicacion: '',
     descripcion: '',
-    fotos: [
-      { src: 'assets/trabajos/trabajo-01/01.jpg', alt: 'Vista general de la cabina' },
-      { src: 'assets/trabajos/trabajo-01/02.jpg', alt: 'Detalle del acabado' }
-    ]
+   fotos: [
+  { src: 'assets/trabajos/trabajo-01/2.jpeg', alt: 'Fotografía del ascensor Noguera' },
+  { src: 'assets/trabajos/trabajo-01/22132121123.jpeg', alt: 'Detalle del ascensor Noguera' },
+  { src: 'assets/trabajos/trabajo-01/WhatsApp Image 2026-11-15 at 16.11.27.jpeg', alt: 'Trabajo realizado por ABELIFT' },
+  { src: 'assets/trabajos/trabajo-01/WhatsApp Image 2326-11-15 at 16.11.27.jpeg', alt: 'Vista adicional del trabajo' }
+]
   },
   {
     publicado: true,
