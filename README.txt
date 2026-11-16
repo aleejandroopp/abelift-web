@@ -62,3 +62,5 @@ IMAGENES CAMBIABLES (7 nov 2026)
 - assets/imagenes/: presentacion.jpg (apartado 01), restauracion.jpg y vestibulo.jpg. Ver assets/imagenes/LEEME.txt.
 - Si falta una foto, se usa la imagen de ejemplo y aparece la nota "ilustración orientativa"; con tu foto la nota desaparece.
 - Puntos interactivos de restauración: editar PUNTOS en la primera línea de secciones.js (modo ayuda: abrir la web con #ajustar-puntos).
+
+Prueba de despliegue automático - 16/11/2026
